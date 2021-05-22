@@ -19,13 +19,6 @@
                 <center>
                     <h2>Instructions to Participants</h2>
                 </center>
-                <ul>
-                    <li>This </li>
-                    <li>contains </li>
-                    <li>set </li>
-                    <li>of </li>
-                    <li>rules</li>
-                </ul>
             </div>
             <center>
                 <button class="btn btn-primary" id="puzzle1-start" style="width:250px;margin-top:30px">Continue <i class="fas fa-angle-double-right"></i></button>
