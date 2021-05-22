@@ -41,3 +41,10 @@
 .word-match{
     background-color: green !important;
 }
+.active-star{
+    color: gold;
+}
+
+.rating-div * {
+    cursor: pointer;
+}

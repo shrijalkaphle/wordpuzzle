@@ -14,19 +14,21 @@
 </head>
 <body>
     <div class="container">
-        <div id="rules" >
+        <div id="rules">
+            <div class="border border-info bg-info" style="padding:20px 50px;border-radius:10px">
+                <center>
+                    <h2>Instructions to Participants</h2>
+                </center>
+                <ul>
+                    <li>This </li>
+                    <li>contains </li>
+                    <li>set </li>
+                    <li>of </li>
+                    <li>rules</li>
+                </ul>
+            </div>
             <center>
-                <h2>Instructions to participants</h2>
-            </center>
-            <ul>
-                <li>This </li>
-                <li>contains </li>
-                <li>set </li>
-                <li>of </li>
-                <li>rules</li>
-            </ul>
-            <center>
-                <button class="btn btn-primary" id="start" style="width:250px">Continue <i class="fas fa-angle-double-right"></i></button>
+                <button class="btn btn-primary" id="puzzle1-start" style="width:250px;margin-top:30px">Continue <i class="fas fa-angle-double-right"></i></button>
             </center>
         </div>
         <div id="puzzle-1" class="hidden">
@@ -46,10 +48,87 @@
                 </div>
             </div>
         </div>
-        <div id="puzzle-2"></div>
-        <div id="puzzle-3"></div>
-        <div id="puzzle-4"></div>
-        <div id="puzzle-5"></div>
+        <div id="puzzle-2" class="hidden">
+            <div class="heading bg-primary">Puzzle 2/5</div>
+            <div id="puzzle2" style="margin-top:20px">
+                <?php include 'includes/puzzle-2.php' ?>
+            </div>
+            <div style="padding:30px" class="word-list hidden" id="puzzle2-result">
+                <div class="row">
+                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
+                    <div class="col-md-6">
+                        <div style="margin-top:30%">
+                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <button class="btn btn-primary" id="puzzle3-start" style="width:250px">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="puzzle-3" class="hidden">
+            <div class="heading bg-primary">Puzzle 3/5</div>
+            <div id="puzzle3" style="margin-top:20px">
+                <?php include 'includes/puzzle-3.php' ?>
+            </div>
+            <div style="padding:30px" class="word-list hidden" id="puzzle3-result">
+                <div class="row">
+                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
+                    <div class="col-md-6">
+                        <div style="margin-top:30%">
+                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <button class="btn btn-primary" id="puzzle4-start" style="width:250px">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="puzzle-4" class="hidden">
+        <div class="heading bg-primary">Puzzle 4/5</div>
+            <div id="puzzle4" style="margin-top:20px">
+                <?php include 'includes/puzzle-4.php' ?>
+            </div>
+            <div style="padding:30px" class="word-list hidden" id="puzzle4-result">
+                <div class="row">
+                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
+                    <div class="col-md-6">
+                        <div style="margin-top:30%">
+                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <button class="btn btn-primary" id="puzzle5-start" style="width:250px">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="puzzle-5" class="hidden">
+            <div class="heading bg-primary">Puzzle 5/5</div>
+            <div id="puzzle5" style="margin-top:20px">
+                <?php include 'includes/puzzle-5.php' ?>
+            </div>
+            <div style="padding:30px" class="word-list hidden" id="puzzle5-result">
+                <div class="row">
+                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
+                    <div class="col-md-6">
+                        <div style="margin-top:30%">
+                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <button class="btn btn-primary" id="puzzle-end" style="width:250px">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="endscreen" class="hidden">
+            <div class="border border-info bg-info" style="padding:150px 50px;border-radius:10px">
+                <center>
+                    <h5>
+                        You have now completed all 5 word puzzles. Well done! <br><br>
+                        Next, we would like you to take a comment to review and rate our puzzle game.
+                    </h5>
+                </center>
+            </div>
+            <center>
+                <button class="btn btn-primary" id="review" style="width:250px;margin-top:30px">Next <i class="fas fa-angle-double-right"></i></button>
+            </center>
+        </div>
     </div>
 </body>
 </html>
