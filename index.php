@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div id="rules">
-            <div class="border border-info bg-info" style="padding:20px 50px;border-radius:10px">
+            <div class="border border-info bg-info text-white" style="padding:20px 50px;border-radius:10px">
                 <center>
                     <h2>Instructions to Participants</h2>
                 </center>
