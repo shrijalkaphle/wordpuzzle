@@ -34,7 +34,17 @@
             <div id="puzzle1" style="margin-top:20px">
                 <?php include 'includes/puzzle-1.php' ?>
             </div>
-            <div id="result1"></div>
+            <div style="padding:30px" class="word-list hidden" id="puzzle1-result">
+                <div class="row">
+                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
+                    <div class="col-md-6">
+                        <div style="margin-top:30%">
+                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <button class="btn btn-primary" id="puzzle2-start" style="width:250px">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="puzzle-2"></div>
         <div id="puzzle-3"></div>

@@ -3,7 +3,7 @@
 </center>
 <div class="row">
     <div class="col-md-7">
-        <table id="puzzle1-scramble">
+        <table class="scramble-table" id="puzzle1-table">
             <tr>
                 <td>A</td>
                 <td>S</td>
@@ -206,10 +206,10 @@
         <div id="puzzle1-words" class="word-list"></div>
     </div>
     <div class="col-md-3">
-        <h5>Remaining Time: <span id="timer">2:00</span></h5>
+        <h5>Remaining Time: <span id="timer-puzzle1">2:00</span></h5>
     </div>
 </div>
 
-<button class="btn btn-primary" style="float:right;margin-top:10px;width:250px">
+<button class="btn btn-primary" id="complete-puzzle1" style="float:right;margin-top:10px;width:250px">
     Sumbit
 </button>

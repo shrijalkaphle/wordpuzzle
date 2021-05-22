@@ -14,7 +14,7 @@
     font-size: 24px;
 }
 
-table tr td{
+.scramble-table tr td{
     border: 1px solid black;
     cursor:pointer
 }
@@ -23,7 +23,7 @@ table tr td{
     margin-top: 20px;
 }
 
-table {
+.scramble-table {
     table-layout: fixed;
     width:100%;
     text-align:center
@@ -34,4 +34,10 @@ table {
 }
 .hidden {
     display: none
+}
+.temp-select{
+    background-color:red !important
+}
+.word-match{
+    background-color: green !important;
 }
