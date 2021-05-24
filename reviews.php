@@ -49,7 +49,6 @@ if (!empty($_POST['name'])) {
     <?php
 }
 
-$conn->close();
 }
 
 ?>
@@ -71,7 +70,7 @@ $conn->close();
                         </div>
                         <div class="mt-4">
                             <label>How much do you like this game?</label>
-                            <select class="custom-select" name="rating" id="">
+                            <select class="custom-select" name="rating" >
                                 <option value="1">1 - Very Bad</option>
                                 <option value="2">2 - Bad</option>
                                 <option value="3">3 - Okay</option>
@@ -95,7 +94,7 @@ $conn->close();
         <!-- Get Reviews -->
         <?php
 
-        $sql = "SELECT * FROM review";
+        $sql = "SELECT * FROM review ORDER BY created_at DESC;";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) :
             ?>
