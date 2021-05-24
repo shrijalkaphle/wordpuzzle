@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Word Search</title>
 </head>
-<body>
+<body id="body">
     <div class="container">
         <div id="rules">
             <div class="border border-info bg-info" style="padding:20px 50px;border-radius:10px">
@@ -134,3 +134,8 @@
 </html>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/puzzlejs/puzzle1.js"></script>
+<script src="assets/js/puzzlejs/puzzle2.js"></script>
+<script src="assets/js/puzzlejs/puzzle3.js"></script>
+<script src="assets/js/puzzlejs/puzzle4.js"></script>
+<script src="assets/js/puzzlejs/puzzle5.js"></script>

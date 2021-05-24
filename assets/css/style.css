@@ -1,3 +1,12 @@
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .container{
     padding: 150px;
 }
@@ -26,7 +35,8 @@
 .scramble-table {
     table-layout: fixed;
     width:100%;
-    text-align:center
+    text-align:center;
+    cursor: pointer;
 }
 .word-list {
     text-transform: uppercase;
