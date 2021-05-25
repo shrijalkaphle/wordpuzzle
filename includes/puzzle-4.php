@@ -211,5 +211,5 @@
 </div>
 
 <button class="btn btn-primary" id="complete-puzzle4" style="float:right;margin-top:10px;width:250px">
-    Sumbit
+    Submit
 </button>
