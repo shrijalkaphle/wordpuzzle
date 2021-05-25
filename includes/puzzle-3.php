@@ -234,7 +234,7 @@
         <div id="puzzle3-words" class="word-list"></div>
     </div>
     <div class="col-md-3">
-        <h5>Timer: <span id="timer-puzzle3">2:00</span></h5>
+        <h5>Timer: <span id="timer-puzzle3">0:00</span></h5>
     </div>
 </div>
 

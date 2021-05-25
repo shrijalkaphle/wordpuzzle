@@ -25,24 +25,39 @@
             </center>
         </div>
         <div id="puzzle-1" class="hidden">
-            <div class="heading bg-primary">Puzzle 1/5</div>
+            <div class="heading bg-primary">Puzzle 1/3</div>
             <div id="puzzle1" style="margin-top:20px">
                 <?php include 'includes/puzzle-1.php' ?>
             </div>
-            <div style="padding:30px" class="word-list hidden" id="puzzle1-result">
+            <div style="padding:10px" class="word-list hidden" id="puzzle1-result">
                 <div class="row">
                     <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
                     <div class="col-md-6">
                         <div style="margin-top:30%">
                             <h5>Your score is <span id="score"></span> out of 18</h5>
-                            <button class="btn btn-primary" id="puzzle2-start" style="width:250px">Next</button>
+                            <h6>You have spent <span id="timetaken"></span> </h6>
+                            <button class="btn btn-primary" id="puzzle1-thankyou" style="width:250px">Next</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="thankyou-1" class="hidden">
+            <div class="border border-info bg-info text-white" style="padding:20px 50px;border-radius:10px">
+                <h5>
+                    Thank you for completing the 1<sup>st</sup> puzzle.
+                    <br> <br>
+                    You will now begin the 2<sup>nd</sup> puzzle game.
+                    <br> <br>
+                    Once you click on the “Continue >>” button below, the 2nd puzzle will be shown.
+                </h5>
+            </div>
+            <center>
+                <button class="btn btn-primary" id="puzzle2-start" style="width:250px;margin-top:30px">Continue <i class="fas fa-angle-double-right"></i></button>
+            </center>
+        </div>
         <div id="puzzle-2" class="hidden">
-            <div class="heading bg-primary">Puzzle 2/5</div>
+            <div class="heading bg-primary">Puzzle 2/3</div>
             <div id="puzzle2" style="margin-top:20px">
                 <?php include 'includes/puzzle-2.php' ?>
             </div>
@@ -52,14 +67,29 @@
                     <div class="col-md-6">
                         <div style="margin-top:30%">
                             <h5>Your score is <span id="score"></span> out of 18</h5>
-                            <button class="btn btn-primary" id="puzzle3-start" style="width:250px">Next</button>
+                            <h6>You have spent <span id="timetaken"></span> </h6>
+                            <button class="btn btn-primary" id="puzzle2-thankyou" style="width:250px">Next</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="thankyou-2" class="hidden">
+            <div class="border border-info bg-info text-white" style="padding:20px 50px;border-radius:10px">
+                <h5>
+                    Thank you for completing the 2<sup>nd</sup> puzzle.
+                    <br> <br>
+                    You will now begin the 3<sup>rd</sup> puzzle game.
+                    <br> <br>
+                    Once you click on the “Continue >>” button below, the 2nd puzzle will be shown.
+                </h5>
+            </div>
+            <center>
+                <button class="btn btn-primary" id="puzzle3-start" style="width:250px;margin-top:30px">Continue <i class="fas fa-angle-double-right"></i></button>
+            </center>
+        </div>
         <div id="puzzle-3" class="hidden">
-            <div class="heading bg-primary">Puzzle 3/5</div>
+            <div class="heading bg-primary">Puzzle 3/3</div>
             <div id="puzzle3" style="margin-top:20px">
                 <?php include 'includes/puzzle-3.php' ?>
             </div>
@@ -69,40 +99,7 @@
                     <div class="col-md-6">
                         <div style="margin-top:30%">
                             <h5>Your score is <span id="score"></span> out of 18</h5>
-                            <button class="btn btn-primary" id="puzzle4-start" style="width:250px">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="puzzle-4" class="hidden">
-        <div class="heading bg-primary">Puzzle 4/5</div>
-            <div id="puzzle4" style="margin-top:20px">
-                <?php include 'includes/puzzle-4.php' ?>
-            </div>
-            <div style="padding:30px" class="word-list hidden" id="puzzle4-result">
-                <div class="row">
-                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
-                    <div class="col-md-6">
-                        <div style="margin-top:30%">
-                            <h5>Your score is <span id="score"></span> out of 18</h5>
-                            <button class="btn btn-primary" id="puzzle5-start" style="width:250px">Next</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="puzzle-5" class="hidden">
-            <div class="heading bg-primary">Puzzle 5/5</div>
-            <div id="puzzle5" style="margin-top:20px">
-                <?php include 'includes/puzzle-5.php' ?>
-            </div>
-            <div style="padding:30px" class="word-list hidden" id="puzzle5-result">
-                <div class="row">
-                    <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
-                    <div class="col-md-6">
-                        <div style="margin-top:30%">
-                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <h6>You have spent <span id="timetaken"></span> </h6>
                             <button class="btn btn-primary" id="puzzle-end" style="width:250px">Next</button>
                         </div>
                     </div>
@@ -113,7 +110,7 @@
             <div class="border border-info bg-info" style="padding:150px 50px;border-radius:10px">
                 <center>
                     <h5>
-                        You have now completed all 5 word puzzles. Well done! <br><br>
+                        You have now completed all 3 word puzzles. Well done! <br><br>
                         Next, we would like you to take a comment to review and rate our puzzle game.
                     </h5>
                 </center>
@@ -130,5 +127,3 @@
 <script src="assets/js/puzzlejs/puzzle1.js"></script>
 <script src="assets/js/puzzlejs/puzzle2.js"></script>
 <script src="assets/js/puzzlejs/puzzle3.js"></script>
-<script src="assets/js/puzzlejs/puzzle4.js"></script>
-<script src="assets/js/puzzlejs/puzzle5.js"></script>

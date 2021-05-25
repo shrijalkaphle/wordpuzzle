@@ -10,8 +10,9 @@ $('#puzzle3-start').click(function(){
         html = html + puzzle3[i] + '<br>'
     }
     $('#puzzle3-words').html(html)
-    $('#puzzle-2').addClass('hidden')
+    $('#thankyou-2').addClass('hidden')
     $('#puzzle-3').removeClass('hidden')
+    timer(3)
 })
 
 $('#puzzle3-table').on('mouseup','td', function() {
@@ -59,6 +60,7 @@ $('#puzzle3-table').on('mouseleave', function() {
 
 $('#complete-puzzle3').on('click', function(){
     $('#puzzle3').addClass('hidden')
+    var timetaken = $('#timer-puzzle3').text()
     html=''
     for(var i=0;i<puzzle3.length;i++) {
         html = html + '<tr><td>' + puzzle3[i] + '</td><td>'
@@ -73,4 +75,5 @@ $('#complete-puzzle3').on('click', function(){
     $('#puzzle3-result').removeClass('hidden')
     $('#puzzle3-result #result').html(html)
     $('#puzzle3-result #score').text(answer3.length)
+    $('#puzzle3-result #timetaken').text(timetaken)
 })

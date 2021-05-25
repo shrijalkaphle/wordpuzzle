@@ -12,7 +12,7 @@ $('#puzzle1-start').click(function(){
     $('#puzzle1-words').html(html)
     $('#rules').addClass('hidden')
     $('#puzzle-1').removeClass('hidden')
-    timer()
+    timer(1)
 })
 
 $('#puzzle1-table').on('mouseup','td', function() {
@@ -59,6 +59,7 @@ $('#puzzle1-table').on('mouseleave', function() {
 })
 
 $('#complete-puzzle1').on('click', function(){
+    var timetaken = $('#timer-puzzle1').text()
     $('#puzzle1').addClass('hidden')
     html=''
     for(var i=0;i<puzzle1.length;i++) {
@@ -74,4 +75,10 @@ $('#complete-puzzle1').on('click', function(){
     $('#puzzle1-result').removeClass('hidden')
     $('#puzzle1-result #result').html(html)
     $('#puzzle1-result #score').text(answer1.length)
+    $('#puzzle1-result #timetaken').text(timetaken)
+})
+
+$('#puzzle1-thankyou').click(function() {
+    $('#thankyou-1').removeClass('hidden')
+    $('#puzzle-1').addClass('hidden')
 })

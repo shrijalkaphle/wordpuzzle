@@ -1,8 +1,6 @@
-const puzzle1 = ['magic kingdom','blizzard beach','theme parks','shows','florida','epcot','typhoon lagoon','fireworks','vacation','rides','resorts','attractions','souveniers','tickets','orlando','characters','ears','pins'];
-const puzzle2 = ['lee kuan yew','merlion','esplanade','rapid transit','buses','golden jubilee','istana','war memorial','housing','jamban','durian','courtesy','padang','president','world war ii','raffles','politics','pap'];
-const puzzle3 = ['tan tock seng','lee hsien loong','leekuan yew','merlion','padang','golden jubilee','president','buses','jamban','istana','water wally','pap','rapid transit','lim bo seng','housing','paya lebar','tony tan','politics','durian'];
-const puzzle4 = ['ruby','diamond','emerald','pearl','aquamarine','sapphire','topaz','jade','opal','amethyst','citrine','garnet','jasper','kunzite','peridot','tanzanite','tourmaline','azurite','onyx'];
-const puzzle5 = ['leonard','howard','penny','amy','theory','rajesh','sheldon','science','physics','comic book','ocd','scientist','pasadena','university','big bang','wolowitz','space','nebraska','caltech','stuart'];
+const puzzle1 = ['magic kingdom','blizzard beach','theme parks','shows','florida'];
+const puzzle2 = ['lee kuan yew','merlion','esplanade','rapid transit','buses'];
+const puzzle3 = ['tan tock seng','lee hsien loong','leekuan yew','merlion','padang'];
 
 var selectword = ''
 
@@ -11,8 +9,6 @@ var lastIndex = ''
 var answer1 = []
 var answer2 = []
 var answer3 = []
-var answer4 = []
-var answer5 = []
 
 var leftButtonDown = false;
 
@@ -45,9 +41,9 @@ function checkAdjacent(currentIndex) {
 
 }
 
-function timer() {
+function timer(id) {
     interval = setInterval( function() {
-        var timer = $('#timer-puzzle1').html();
+        var timer = $('#timer-puzzle'+id).html();
         timer = timer.split(':');
         var minutes = parseInt(timer[0]);
         var seconds = parseInt(timer[1]);
@@ -60,18 +56,14 @@ function timer() {
         if(seconds<10){
             seconds = '0'+seconds
         }
-        $('#timer-puzzle1').html(minutes + ':' + seconds);
-        $('#timer-puzzle2').html(minutes + ':' + seconds);
-        $('#timer-puzzle3').html(minutes + ':' + seconds);
-        $('#timer-puzzle4').html(minutes + ':' + seconds);
-        $('#timer-puzzle5').html(minutes + ':' + seconds);
+        $('#timer-puzzle'+id).html(minutes + ':' + seconds);
     }, 1000);
 }
 
 // end puzzle
 
 $('#puzzle-end').click(function() {
-    $('#puzzle-5').addClass('hidden')
+    $('#puzzle-3').addClass('hidden')
     $('#endscreen').removeClass('hidden')
 })
 
