@@ -12,7 +12,7 @@ $('#puzzle1-start').click(function(){
     $('#puzzle1-words').html(html)
     $('#rules').addClass('hidden')
     $('#puzzle-1').removeClass('hidden')
-    countdown('1')
+    timer()
 })
 
 $('#puzzle1-table').on('mouseup','td', function() {

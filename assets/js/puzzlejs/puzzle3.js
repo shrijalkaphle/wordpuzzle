@@ -12,7 +12,6 @@ $('#puzzle3-start').click(function(){
     $('#puzzle3-words').html(html)
     $('#puzzle-2').addClass('hidden')
     $('#puzzle-3').removeClass('hidden')
-    countdown('3')
 })
 
 $('#puzzle3-table').on('mouseup','td', function() {

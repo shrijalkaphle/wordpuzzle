@@ -45,27 +45,26 @@ function checkAdjacent(currentIndex) {
 
 }
 
-function countdown(puzzle) {
-    clearInterval(interval);
+function timer() {
     interval = setInterval( function() {
-        var timer = $('#timer-puzzle'+puzzle).html();
+        var timer = $('#timer-puzzle1').html();
         timer = timer.split(':');
-        var minutes = timer[0];
-        var seconds = timer[1];
-        seconds -= 1;
-        if (minutes < 0) return;
-        else if (seconds < 0 && minutes != 0) {
-            minutes -= 1;
-            seconds = 59;
+        var minutes = parseInt(timer[0]);
+        var seconds = parseInt(timer[1]);
+        seconds += 01;
+        
+        if(seconds > 59) {
+            minutes +=1
+            seconds = 00
         }
-        else if (seconds < 10 && length.seconds != 2) seconds = '0' + seconds;
-
-        $('#timer-puzzle'+puzzle).html(minutes + ':' + seconds);
-
-        if (minutes == 0 && seconds == 0) {
-            clearInterval(interval)
-            $('#complete-puzzle'+puzzle).click()
-        };
+        if(seconds<10){
+            seconds = '0'+seconds
+        }
+        $('#timer-puzzle1').html(minutes + ':' + seconds);
+        $('#timer-puzzle2').html(minutes + ':' + seconds);
+        $('#timer-puzzle3').html(minutes + ':' + seconds);
+        $('#timer-puzzle4').html(minutes + ':' + seconds);
+        $('#timer-puzzle5').html(minutes + ':' + seconds);
     }, 1000);
 }
 

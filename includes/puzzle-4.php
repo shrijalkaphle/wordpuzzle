@@ -206,7 +206,7 @@
         <div id="puzzle4-words" class="word-list"></div>
     </div>
     <div class="col-md-3">
-        <h5>Remaining Time: <span id="timer-puzzle4">2:00</span></h5>
+        <h5>Timer: <span id="timer-puzzle4">2:00</span></h5>
     </div>
 </div>
 
