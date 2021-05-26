@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2021 at 09:30 AM
+-- Generation Time: May 25, 2021 at 10:22 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -31,21 +31,19 @@ CREATE TABLE `review` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `review` text NOT NULL,
-  `rating` int(1) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `enjoyable_rating` int(1) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `intresting_rating` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `review`
 --
 
-INSERT INTO `review` (`id`, `name`, `review`, `rating`, `created_at`) VALUES
-(1, 'Rowdy', 'Rowdy', 1, '2021-05-22 07:12:02'),
-(2, 'Rowdy', 'Rowdy', 1, '2021-05-22 07:12:02'),
-(3, 'Shrijal', 'Wassup', 5, '2021-05-22 07:12:02'),
-(4, 'Chicken Chowmein', 'asd', 1, '2021-05-22 07:29:12'),
-(5, 'Pizza', 'Howdy', 3, '2021-05-22 07:29:24'),
-(6, 'Pizza', 'Howdy', 3, '2021-05-22 07:29:28');
+INSERT INTO `review` (`id`, `name`, `review`, `enjoyable_rating`, `created_at`, `intresting_rating`) VALUES
+(51, 'Adela', '\r\n                        This game is amazing. Absolutely loved it!', 5, '2021-05-25 08:13:15', 5),
+(52, 'Amandaz', '\r\n                        Not my type really.', 1, '2021-05-25 08:13:31', 1),
+(53, 'Amelia', '\r\n                        Waiting for part 2!!', 4, '2021-05-25 08:16:27', 4);
 
 --
 -- Indexes for dumped tables
@@ -65,7 +63,7 @@ ALTER TABLE `review`
 -- AUTO_INCREMENT for table `review`
 --
 ALTER TABLE `review`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

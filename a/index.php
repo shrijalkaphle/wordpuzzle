@@ -34,7 +34,7 @@
                     <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
                     <div class="col-md-6">
                         <div style="margin-top:30%">
-                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <h5>Your score is <span id="score"></span> out of 4</h5>
                             <h6>You have spent <span id="timetaken"></span> </h6>
                             <button class="btn btn-primary" id="puzzle1-thankyou" style="width:250px">Next</button>
                         </div>
@@ -66,7 +66,7 @@
                     <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
                     <div class="col-md-6">
                         <div style="margin-top:30%">
-                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <h5>Your score is <span id="score"></span> out of 5</h5>
                             <h6>You have spent <span id="timetaken"></span> </h6>
                             <button class="btn btn-primary" id="puzzle2-thankyou" style="width:250px">Next</button>
                         </div>
@@ -98,7 +98,7 @@
                     <div class="col-md-6"><table style="border:0pxtable-layout: fixed;width:100%;" id="result"></table></div>
                     <div class="col-md-6">
                         <div style="margin-top:30%">
-                            <h5>Your score is <span id="score"></span> out of 18</h5>
+                            <h5>Your score is <span id="score"></span> out of 5</h5>
                             <h6>You have spent <span id="timetaken"></span> </h6>
                             <button class="btn btn-primary" id="puzzle-end" style="width:250px">Next</button>
                         </div>
