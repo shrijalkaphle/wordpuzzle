@@ -70,3 +70,7 @@ $('#puzzle-end').click(function() {
 $('#review').click(function() {
     window.location.href = 'reviews'
 })
+$('#welcome-screen').click(function() {
+    $('#rules').addClass('hidden')
+    $('#welcome').removeClass('hidden')
+})
