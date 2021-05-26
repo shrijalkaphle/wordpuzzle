@@ -1,14 +1,14 @@
 <?php
 $server = $_SERVER['SERVER_NAME'];;
 
-// $user = 'root';
-// $password = '';
-// $db = 'wordpuzzle';
+$user = 'root';
+$password = '';
+$db = 'wordpuzzle';
 
 // Deployment
- $db = 'researc6_wordpuzzle';
- $user = 'researc6_user';
- $password = 'w0rdpuzzle123';
+//  $db = 'researc6_wordpuzzle';
+//  $user = 'researc6_user';
+//  $password = 'w0rdpuzzle123';
 
 $conn = new mysqli($server, $user, $password, $db);
 

@@ -10,7 +10,7 @@ if (isset($_POST['name'])) {
 
 
     // Insert
-    $sql = "INSERT INTO review (name,review,enjoyable_rating,intresting_rating) VALUES('$name','$review','$enjoyable_rating','$intresting_rating')";
+    $sql = "INSERT INTO review (name,review,enjoyable_rating,intresting_rating,from_page) VALUES('$name','$review','$enjoyable_rating','$intresting_rating','positive')";
 
     // Success
     if ($conn->query($sql) === true) : ?>

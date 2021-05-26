@@ -1,4 +1,10 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 include './dbconnect.php';
 
 if (isset($_POST['name'])) {
@@ -10,7 +16,7 @@ if (isset($_POST['name'])) {
 
 
     // Insert
-    $sql = "INSERT INTO review (name,review,enjoyable_rating,intresting_rating) VALUES('$name','$review','$enjoyable_rating','$intresting_rating')";
+    $sql = "INSERT INTO review (name,review,enjoyable_rating,intresting_rating,from_page) VALUES('$name','$review','$enjoyable_rating','$intresting_rating','negative')";
 
     // Success
     if ($conn->query($sql) === true) : ?>
