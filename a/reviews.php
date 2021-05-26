@@ -17,9 +17,9 @@
         <!-- Get Reviews -->
         <?php
         include 'includes/dbconnect.php';
-        
+
         // Only Postive
-        $sql = "SELECT * FROM review WHERE intresting_rating >= 3 AND enjoyable_rating >= 3 ORDER BY created_at DESC;";
+        $sql = "SELECT * FROM review WHERE intresting_rating >= 3 AND enjoyable_rating >= 3 AND from_page = 'static' ORDER BY created_at DESC;";
         // Only Negative
         // $sql = "SELECT * FROM review WHERE intresting_rating < 3 AND enjoyable_rating < 3 ORDER BY created_at DESC;";
 
