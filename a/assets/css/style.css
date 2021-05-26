@@ -50,6 +50,7 @@ body {
 }
 .word-match {
   background-color: green !important;
+  color: white;
 }
 .active-star {
   color: gold;

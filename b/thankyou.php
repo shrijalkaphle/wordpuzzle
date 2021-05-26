@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div id="rules">
-            <div class="border border-info bg-info text-white" style="padding:20px 50px;border-radius:10px">
+            <div class="border border-info bg-primary text-white" style="padding:20px 50px;border-radius:10px">
                 <center>
                     <p style="font-size:20px;padding-top:50px">Thank You for completing the study!</p>
                     <br> <br>
