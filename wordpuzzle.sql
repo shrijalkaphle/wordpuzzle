@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2021 at 10:22 AM
+-- Generation Time: May 26, 2021 at 09:17 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -33,17 +33,20 @@ CREATE TABLE `review` (
   `review` text NOT NULL,
   `enjoyable_rating` int(1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `intresting_rating` int(1) NOT NULL
+  `intresting_rating` int(1) NOT NULL,
+  `from_page` enum('positive','negative','static') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `review`
 --
 
-INSERT INTO `review` (`id`, `name`, `review`, `enjoyable_rating`, `created_at`, `intresting_rating`) VALUES
-(51, 'Adela', '\r\n                        This game is amazing. Absolutely loved it!', 5, '2021-05-25 08:13:15', 5),
-(52, 'Amandaz', '\r\n                        Not my type really.', 1, '2021-05-25 08:13:31', 1),
-(53, 'Amelia', '\r\n                        Waiting for part 2!!', 4, '2021-05-25 08:16:27', 4);
+INSERT INTO `review` (`id`, `name`, `review`, `enjoyable_rating`, `created_at`, `intresting_rating`, `from_page`) VALUES
+(51, 'Adela', '\r\n                        This game is amazing. Absolutely loved it!', 5, '2021-05-25 08:13:15', 5, 'static'),
+(52, 'Amandaz', '\r\n                        Not my type really.', 1, '2021-05-25 08:13:31', 1, 'static'),
+(53, 'Amelia', '\r\n                        Waiting for part 2!!', 4, '2021-05-25 08:16:27', 4, 'static'),
+(54, 'Positive Review', 'Nice game liked it.', 4, '2021-05-26 07:05:06', 4, 'positive'),
+(56, 'Negative Review', '\r\n                        Negative', 2, '2021-05-26 07:07:39', 2, 'negative');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +66,7 @@ ALTER TABLE `review`
 -- AUTO_INCREMENT for table `review`
 --
 ALTER TABLE `review`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
