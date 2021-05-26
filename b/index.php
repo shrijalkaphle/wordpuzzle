@@ -16,9 +16,33 @@
     <div class="container">
         <div id="rules">
             <div class="border border-info bg-info text-white" style="padding:20px 50px;border-radius:10px">
-                <center>
-                    <h2>Instructions to Participants</h2>
-                </center>
+                <p style="font-size:20px">Dear study participant,</p>
+                <br>
+                <p style="font-size:20px">Thank you for taking part in this study. Your contribution is very important to us.</p>
+                <br>
+                <p style="font-size:20px">
+                    In this study, we would require you to attempt 3 word puzzles. In each puzzle, you will be provided with a list of words, 
+                    which can be found in the puzzle. You can spend as long as you need to complete each puzzle. We hope that you can do your best.
+                </p>
+                <br>
+                <p style="font-size:20px">
+                    In this study, we would require you to attempt 3 word puzzles. In each puzzle, you will be provided with a list of words, 
+                    which can be found in the puzzle. You can spend as long as you need to complete each puzzle. We hope that you can do your best.
+                </p>
+                <br>
+            </div>
+            <center>
+                <button class="btn btn-primary" id="welcome-screen" style="width:250px;margin-top:30px">Continue <i class="fas fa-angle-double-right"></i></button>
+            </center>
+        </div>
+        <div id="welcome" class="hidden">
+        <div class="border border-info bg-info text-white" style="padding:20px 50px;border-radius:10px">
+                <p style="font-size:20px">You will now begin the 1st puzzle game.</p>
+                <br> <br>
+                <p style="font-size:20px">
+                    Once you click on the “Continue >>” button below, the 1st puzzle will be shown
+                </p>
+                <br> <br>
             </div>
             <center>
                 <button class="btn btn-primary" id="puzzle1-start" style="width:250px;margin-top:30px">Continue <i class="fas fa-angle-double-right"></i></button>

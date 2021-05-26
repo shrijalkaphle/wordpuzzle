@@ -10,7 +10,7 @@ $('#puzzle1-start').click(function(){
         html = html + puzzle1[i] + '<br>'
     }
     $('#puzzle1-words').html(html)
-    $('#rules').addClass('hidden')
+    $('#welcome').addClass('hidden')
     $('#puzzle-1').removeClass('hidden')
     timer(1)
 })

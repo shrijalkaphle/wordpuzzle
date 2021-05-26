@@ -27,7 +27,7 @@ if (isset($_POST['name'])) {
             </div>
         </div>
         <?php
-        header("Location: ../reviews.php");
+        header("Location: ../thankyou.php");
         die();
     endif;
     // No success
